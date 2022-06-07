@@ -1,4 +1,4 @@
 export type FilterCitiesDTO = {
-    isDeleted?: boolean
-    includeDeleted?: boolean
-}
+  isDeleted?: boolean;
+  includeDeleted?: boolean;
+};

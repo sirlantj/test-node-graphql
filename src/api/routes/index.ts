@@ -1,8 +1,8 @@
-import { Router } from 'express'
-import citiesRouter from './cities'
+import { Router } from 'express';
+import citiesRouter from './cities';
 
-const router = Router()
+const router = Router();
 
-router.use('/cities', citiesRouter)
+router.use('/cities', citiesRouter);
 
-export default router
+export default router;

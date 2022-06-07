@@ -1,4 +1,4 @@
-import { Cities } from  '../../../db/models';
+import { Cities } from '../../../db/models';
 
 export const citiesResolvers = {
   Query: {
@@ -6,11 +6,11 @@ export const citiesResolvers = {
       return Cities.findAll();
     },
     async getByZipCode(parent: any, args: any, context: any, info: any) {
-        console.log(args);
-        let test = Cities.findOne({ where: { zipcode: args.zipcode } }); 
-        console.log(test);
-        return test;
-      //return Cities.findOne({ where: { zipcode: zipcode } }); 
+      console.log(args);
+      let test = Cities.findOne({ where: { zipcode: args.zipcode } });
+      console.log(test);
+      return test;
+      //return Cities.findOne({ where: { zipcode: zipcode } });
     },
   },
 };
