@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+      // Process & infer types from .js files.
+      "allowJs": true,
+      "target": "es6",                                /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019', 'ES2020', 'ES2021', or 'ESNEXT'. */
+      "module": "commonjs",                           /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', 'es2020', or 'ESNext'. */
+      // Enable strictest settings like strictNullChecks & noImplicitAny.
+      "strict": true,
+      // Import non-ES modules as default imports.
+      "esModuleInterop": true,
+      // Ensure that .d.ts files are created by tsc, but not .js files
+      "declaration": true,
+      "skipLibCheck": true,
+      // Ensure that Babel can safely transpile files in the TypeScript project
+      "isolatedModules": true,
+      "noEmit": true,
+      "outDir": "./build"
+    }
+  }
