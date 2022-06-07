@@ -15,43 +15,6 @@ import { resolvers } from './api/graphql/resolvers';
 //dbInit()
 
 const port = process.env.PORT ? parseInt(process.env.PORT) : 3001;
-/*
-export const get = () => {
-  const app: Application = express();
-
-  // Body parsing Middleware
-  app.use(cors());
-  app.use(helmet());
-  app.use(morgan('dev'));
-  app.use(bodyParser.urlencoded({ extended: true }));
-  app.use(bodyParser.json());
-  
- app.use('/api/v1', routes);
-
-/*
- const apolloServer = new ApolloServer({
-  //modules: [],
-  typeDefs,
-  resolvers,
-  //context,
-  introspection: true, 
-});
-*/
-
-// added this line
-//await apolloServer.start();
-
-//apolloServer.applyMiddleware({ app, path: '/api' });
-
-//app.get('/', (req, res) => res.send('Hello World!'));
-//const server = createServer(app);
-
-//module.exports = server;
-/*
-  return app;
-};
-*/
-
 const startExpressApolloServer  = async() => {
   typeDefs;
   resolvers;
@@ -83,7 +46,6 @@ const startExpressApolloServer  = async() => {
     
     server.applyMiddleware({ app, path: '/api/graphql' });
 
-    //await new Promise(resolve => app.listen({ port: port }, resolve));
     try {
       app.listen(port, () => {
         console.log(`Server running on http://localhost:${port}`);
@@ -96,18 +58,4 @@ const startExpressApolloServer  = async() => {
  }
 
  startExpressApolloServer();
-
- /*
-export const start = () => {
-  const app = get();
-  try {
-    app.listen(port, () => {
-      console.log(`Server running on http://localhost:${port}`);
-    });
-  } catch (error) {
-    console.log(`Error occurred: ${error}`);
-  }
-};
-
-start();
-*/
+ 
