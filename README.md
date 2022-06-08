@@ -1,5 +1,7 @@
 # test-node-grapqhl
-A sample node API for finding cities and countries using the zipcode, is used here to demonstrate the API rest and graphql
+A sample node API for finding cities and countries using the zipcode, is used here to demonstrate the API rest and graphql.
+
+* If i had more time I would include more unit tests and integraation tests, and do runnuing in docker and CI integration on github, and try to do the union work, I can't handle errors using this method.
 
 <details open="open">
   <summary>Table of Contents</summary>
